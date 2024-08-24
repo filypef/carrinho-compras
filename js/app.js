@@ -10,7 +10,7 @@ function adicionar(){
     let quantidade = document.getElementById('quantidade').value;
 
     if(quantidade == ""){
-        alert("Por favor informe um valor!")
+        alert("Por favor informe um valor!");
         return false;
     }
 
@@ -32,11 +32,7 @@ function adicionar(){
 function limpar(){
     totalNoCarrinho = [];
 
-    let quantidade = document.getElementById('quantidade');
-    quantidade.value = "";
-    let descricaoProduto = document.getElementById('lista-produtos');
-    descricaoProduto.innerHTML = "";
-    let carrinhoTotal = document.getElementById('valor-total');
-    carrinhoTotal.innerHTML =  `0`;
-
+    document.getElementById('quantidade').value = "";
+    document.getElementById('lista-produtos').innerHTML = "";
+    document.getElementById('valor-total').innerHTML =  `0`;
 }
